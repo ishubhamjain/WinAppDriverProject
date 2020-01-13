@@ -17,6 +17,15 @@ public class CalculatorTest {
         try {
             DesiredCapabilities capabilities = new DesiredCapabilities();
             capabilities.setCapability("app", "Microsoft.WindowsCalculator_8wekyb3d8bbwe!App");
+            
+            //Microsoft.WindowsCalculator_10.1910.0.0_x64__8wekyb3d8bbwe, 
+            
+            /**
+    		 * @author Shubham Jain
+    		 *To get the app id we need to open the app, use task manager and right click on it and see properties and copy the id
+    		 *Add !App at the end of the id and paste in above capability 
+    		 */
+            
             CalculatorSession = new WindowsDriver(new URL("http://127.0.0.1:4723"), capabilities);
             CalculatorSession.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 
