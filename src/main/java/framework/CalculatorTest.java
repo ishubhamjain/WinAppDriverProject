@@ -5,7 +5,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import java.util.concurrent.TimeUnit;
 import java.net.URL;
+
+import io.appium.java_client.MobileElement;
 import io.appium.java_client.windows.WindowsDriver;
+import io.appium.java_client.windows.WindowsElement;
 
 public class CalculatorTest {
 
@@ -89,6 +92,7 @@ public class CalculatorTest {
         CalculatorSession.findElementByName("One").click();
         CalculatorSession.findElementByName("One").click();
         CalculatorSession.findElementByName("Equals").click();
+
         Assert.assertEquals("8", _GetCalculatorResultText());
     }
 

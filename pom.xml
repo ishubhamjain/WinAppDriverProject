@@ -29,6 +29,13 @@
 			<artifactId>guava</artifactId>
 			<version>28.2-jre</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>6.11</version>
+            <scope>test</scope>
+        </dependency>
 
 	</dependencies>
 </project>
